@@ -1,18 +1,21 @@
 #alfabet = ""
 #for i in range (ord('a'), ord('z')):
 #    alfabet+=(chr(i))
-
-alfabet = [chr(i) for i in range(ord('a'), ord('z')+1)]
+import random
+alfabet = [chr(i) for i in range(ord('a'), ord('z')+1)] + list("ą,ć, ę,ł,ó, ź,ż")
 def szyfruj (napis, klucz):
     szyfr = [alfabet[(i + klucz) % len(alfabet)] for i in range(len(alfabet))]
     wynik = ''
     for znak in napis:
         #if znak.islower():
-        if ord ('a') <= ord(znak) <=ord('z'):
+      #  if ord ('a') <= ord(znak) <=ord('z'):
            #indeks = alfabet.index(znak)
-           indeks = ord(znak) - ord('a')
-           zaszyfrowany_znak = szyfr [indeks]
-           wynik+=zaszyfrowany_znak
+       #    indeks = ord(znak) - ord('a')
+        if znak in alfabet:
+            #zaszyfrowany_znak = szyfr [indeks]
+            indeks = alfabet.index(znak)
+            zaszyfrowany_znak = szyfr[indeks]
+            wynik += zaszyfrowany_znak
         else:
            wynik+=znak
     return wynik
