@@ -5,7 +5,7 @@
 alfabet = [chr(i) for i in range(ord('a'), ord('z')+1)]
 def szyfruj (napis, klucz):
     szyfr = [alfabet[(i + klucz) % len(alfabet)] for i in range(len(alfabet))]
-    print(szyfr)
+
     wynik = ''
     for znak in napis:
         #if znak.islower():
