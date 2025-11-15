@@ -1,4 +1,4 @@
-from obiekty.punkt import Punkt
+from punkt import Punkt
 
 class Prostokat:
     def __init__(self, lewy_gorny_punkt, szerokosc, wysokosc):
@@ -10,7 +10,7 @@ class Prostokat:
         return self.wysokosc * self.szerokosc
 
 if __name__ == '__main__':
-    lg = Punkt(5, 10)
+    lg = Punkt()
     print(lg.x, lg.y)
 
     pr = Prostokat(lg, 20,  30)
