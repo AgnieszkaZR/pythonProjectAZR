@@ -6,5 +6,4 @@ class Ulamek:
 if __name__ == '__main__':
     u = Ulamek(3, 4)
     print(u.licznik, u.mianownik)
-    u = Ułamek (3,4)
-    print(v.licznik, v.mianownik)
+
