@@ -4,14 +4,13 @@ class Punkt:
         self.y = 0
 
 
-if __ name__=='__main__':
-            p = Punkt()
+if __name__ == '__main__':
+    p = Punkt()
+    print(p.x, p.y)
 
-            print(p.x, p.y)
+    q = Punkt()
 
-            q = Punkt()
-
-
-            p.x=5
-            p.y=10
-            print(p.x, p.y)
+    p.x = 5
+    p.y = 10
+    print(p.x, p.y)
+    print(q.x, q.y)

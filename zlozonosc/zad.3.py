@@ -15,7 +15,7 @@ def znajdz_indeksy_v2(dane, suma):
                     return i, j
 
 # T(N) = N(N-1)/2
-# O(N) = N^2
+# O(N) = N^2gg
 
 dane = [3,7,9,12,19,30,41,56,71]
 szukane_suma = 60
