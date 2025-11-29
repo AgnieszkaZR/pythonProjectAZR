@@ -26,6 +26,8 @@ def koszt_przejscia(dane):
     return None
 
 
+
+
 dane = [
     [3,  2, 12, 15, 10],
     [6, 19,  7, 11, 17],
